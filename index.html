@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>TMS-Front</title>
+    <style>
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Spline Sans Mono', monospace;  
+            width: 1170px;
+            padding: 0 15px;
+               }
+    </style>
+</head>
+<body> 
+
+
+    <div class="tab-image"> 
+        <img class="tab-image__leftimage" src="/Rectangle111.png" alt="Rectangle111">
+    </div>
+
+
+
+
+
+<div class="tabs">
+    <div class="tabs__pages--wrapper">
+        <ul class="tabs__pages">
+            <li class="tabs__page--active">Tab1</li>
+            <li class="tabs__page">Tab2</li>
+            <li class="tabs__page">Tab3</li>
+        </ul>
+    </div>
+    <div class="tabs__content">
+        <div class="tabs__conten-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+            penatibus et magnis dis parturient montes.
+            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            bibendum laoreet.</div>
+        <div class="tabs__content-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+            penatibus et magnis dis parturient montes.
+            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            bibendum laoreet.</div>
+        <div class="tabs__content-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+            penatibus et magnis dis parturient montes.
+            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            bibendum laoreet.</div>
+    </div>
+</div>
+
+
+
+
+   
+   
+    <section class="about-us">
+   <h2 class="about-us__main-list"> 
+    WHY THIS IS AWESOME 
+  </h2>
+   <div class="separator">
+       <div class="separator__image-wratter"> 
+           <img class="separator__image" src="/separator.png" alt="separator">
+      </div>
+   </div>
+   <p class="about-us__secondary_title">  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<ul class="about-us__skill-list">
+    <li class ="skill-list__skill-item">
+        <div class="skill-item__image-wrapper">
+            <img class="skill-item__image" src="about_icon_1.png" alt="icon">
+        </div>
+        <div class="skill-item__title"> <b>Thoughtful Design</b></div>
+        <p class="skill-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+    </li>
+    <li class="skill-list__skill-item">
+        <div class="skill-item__image-wrapper">
+            <img class="skill-item__image" src="about_icon_2.png" alt="icon">        </div>
+        <div class="skill-item__title"> <b> Thoughtful Design </b> </div>
+      <p class="skill-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+    </div>
+    </li>
+    <li class="skill-list__skill-item">
+        <div class="skill-item__image-wrapper">
+            <img class="skill-item__image" src="about_icon_3.png" alt="">
+        <div class="skill-item__tytle"> <b> Thoughtful Design </b> </div>
+        <p class="skill-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+    </div>
+        </li>
+</ul>
+
+</section>
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

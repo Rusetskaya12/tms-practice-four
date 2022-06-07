@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Spline+Sans+Mono:wght@300&display=swap')@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Spline+Sans+Mono:wght@300&display=swap');
+;
+* {
+    box-sizing: border-box;}
+:root {
+    --font-raleway: 'Raleway', sans-serif;
+}
+
+.about-us { 
+    text-align: center;
+    width: 1170px;
+    padding: 0% 15%;
+    height: 150px;
+    font-family: var(--font-raleway)Open;
+    left: 171px;
+color: #000}
+
+
+.about-us__secondary_title {
+    text-align: center;
+    color: #86878B;
+    border: 1px
+    font-family: var(var(--font-raleway))
+ }
+
+.skill-list__skill-item {
+    font-family: var(--font-raleway);
+    margin: 10px;
+	padding: 20px 10px;
+	width: calc(29% - 24px);
+	display: inline-block;
+}
+
+
+/*style the tabs*/
+
+.tabs__page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font: size 16px;
+    font-weight: 700;
+    test-transform: uppercase;
+    width: 40px;
+    padding: 10px;
+}
+.tabs__page--active {
+    border-top: 1px solid #ededee;
+    border-left: 1px solid #ededee;
+    border-right: 1px solid #ededee;
+}
+
+.tab-image__leftimage {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    padding: 0 20px;
+max-width: 100%;
+display: block;
+float: right;
+
+}
+
+.button {
+    width: 370px;
+    height: 80px;
+    border: none;
+    padding: 10px;
+    border-color: transparent;
+}
+
+.button-primary {
+    background-color: #ec7979;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    transition: background-color .3s ease;
+}
+
+.button-primary:hover, .button-primary:focus {
+    cursor: pointer;
+    background-color: #9c3d3d;
+}
+
+
