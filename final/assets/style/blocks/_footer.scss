@@ -1,0 +1,30 @@
+.footer--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background: #000;  
+    
+    &__network {
+    display: flex;
+    flex-direction: column;
+}
+}
+.company__name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF80;
+
+}
+
+.network__icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

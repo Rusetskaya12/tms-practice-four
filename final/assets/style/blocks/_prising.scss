@@ -1,0 +1,101 @@
+
+.prising--container {
+    flex-direction: column;
+
+}
+.pricing {
+    display: flex;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    background: #F5F5F5;
+    color: #000;
+
+    &__first-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: uppercase;
+        
+        }
+
+        &__prices-list {
+            display: flex;
+            justify-content: center;
+        }
+
+    &__secondary-title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #86878B;
+            }
+
+    &__prices-item {
+            
+            width: calc(29% - 24px);
+            margin-left: 45px;
+            margin-top: 45px;
+
+            &:hover {
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 5px 5px gray;
+            }
+        }
+    }
+
+.prices-item {
+    &__title {
+      
+        margin-bottom: 0px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        background-color:#333333;  
+        color: white;
+        border: 2px solid #F5F5F5;
+    }
+
+    
+    &__free-period {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: rgba(255, 255, 255, 0.5);
+        background-color: #000;
+        margin: 0px 0px 0px 0px;
+}
+    &__price {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;    
+        background-color:#000;  
+        color:#FFFFFF;
+        height: 100px;
+        margin: 0px 0px 0px 0px;
+        border: 2px solid #F5F5F5
+ }
+    
+    &__descr {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #86878B;
+        border: 2px solid #F5F5F5;
+        background-color:#FFFFFF;
+        text-transform: capitalize;
+        margin: 0px 0px 0px 0px;
+  } 
+}

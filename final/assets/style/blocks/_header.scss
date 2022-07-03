@@ -1,0 +1,68 @@
+.header__container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+      
+.header
+{
+    position: absolute;
+    width: 100%;
+    background: #000;
+
+    &__allInformation {
+        display: flex
+    }
+    
+    
+
+&__logo {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+&__navigation {
+    font-family: $fontRaleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: flex;
+    text-transform: capitalize;
+}
+
+&__navigation-menu {
+    padding:0 40px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+&__burger-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: none;
+    width: 24px;
+    height: 18px;
+
+    @include mediaMobile {
+        display: block;
+
+        &:active {
+            .header__burger-icon path{  
+                fill: rgb(215, 211, 211);
+            }
+        }
+    }
+}
+    &__burger-icon {
+        path {
+            fill: white;
+            }
+        }
+    }
+
+    
+
+
