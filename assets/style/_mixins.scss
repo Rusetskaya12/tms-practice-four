@@ -1,0 +1,25 @@
+@mixin container {
+    @media (max-width: 1200px) {
+        width: 1024px;
+    }
+
+    @media (max-width: 768px) {
+        width: 771px;
+    }
+
+    @media(max-width:601px) {
+        width: 100%;
+    }
+}
+
+@mixin mediaTablet {
+    @media screen and (max-width:1199px) {
+        @content;
+    }
+}   
+
+@mixin mediaMobile {
+    @media screen and (max-width: 1023px) {
+		@content;
+	}
+}

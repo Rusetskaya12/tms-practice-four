@@ -1,0 +1,94 @@
+
+.customers--container {
+    flex-direction: column;}
+
+.customers {
+
+    &__reviews {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    &__first-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;  
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+    &__secondary_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #86878B;  
+    }
+
+    &__reviews-item {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 20px;
+        width: calc(29% - 24px);
+        text-align: center;
+        color:#86878B;
+    }
+}
+
+.reviews-item {
+
+    &__arrow::after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #E2E2E2;;
+        transform: rotate(45deg); 
+    }
+
+    &__feedback {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color:#E2E2E2;
+        display: flex;
+        
+    }
+
+   
+    &__photo--avatar {
+        display: block;  
+        margin-right: 10px;
+        width: 75px;
+        }
+
+    &__name--nameCustomers {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color:#000000;
+        text-align: left;  
+        }
+
+    &__job-title--jobCustomers {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;    
+        }
+
+        &__name {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+}

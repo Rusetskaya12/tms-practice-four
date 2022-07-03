@@ -1,0 +1,72 @@
+
+.about-us--container {
+    display: flex;
+    flex-direction: column;
+}
+.about-us { 
+
+&__main-list {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+
+
+&__secondary_title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+ }
+
+ &__skill-list {
+    display: flex;
+    justify-content: center;
+ }
+}
+
+.skill-list  {
+
+
+    &__skill-item {
+    font-family: var(--font-raleway);
+    margin: 10px;
+	padding: 20px 10px;
+	width: calc(29% - 24px);
+	display: inline-block;
+}
+}
+
+.skill-item {
+    
+    &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    }
+}
+
+.skill-item__image--wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-item__description {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+
