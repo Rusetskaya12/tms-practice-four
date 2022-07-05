@@ -1,5 +1,5 @@
 
-.prising--container {
+/*.prising--container {
     flex-direction: column;
 
 }
@@ -17,6 +17,7 @@
         font-weight: 400;
         font-size: 36px;
         text-transform: uppercase;
+
         
         }
 
@@ -99,3 +100,98 @@
         margin: 0px 0px 0px 0px;
   } 
 }
+*/ 
+.price {
+    background-color: #f5f5f5;
+    padding: 100px 0 50px 0;
+
+    &__first-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__secondary-title {
+        margin: 95px 0 80px 0;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(134, 135, 139, 1);
+        text-align: center
+        ;
+    }
+
+    &__prices-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0 -15px;
+    }
+
+.price-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            width: 370px;
+            background-color: #fff;
+            margin: 0 15px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: translateY(-15px);
+                filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+                
+            }
+            &__title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            padding: 17px 0;
+            border: 1px solid #f5f5f5;
+            background-color: #333333;
+            margin: 0px;
+            }
+
+            &__price {
+                font-family: Raleway;
+                padding: 31px 0;
+                font-size: 36px;
+                font-weight: 700;
+                color: #ffffff;
+                border: 1px solid #f5f5f5;
+                background-color: #333333; 
+                margin: 0px;  
+            }
+
+            &__free-period {
+                font-family: Raleway;
+                padding: 15px 0;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.5);
+                border: 1px solid #f5f5f5;
+                background-color: #333333;
+                margin: 0px;
+            }
+
+            &__char {
+                p {
+                    font-family: Raleway;
+                    padding: 15px 0;
+                    font-size: 18px;
+                    color: #86878b;
+                    text-transform: capitalize;
+                    border: 1px solid #f5f5f5;
+                    background-color: #ffffff;
+                    margin: 0px;
+                }
+        
+            }
+    }
+
+
+}
+

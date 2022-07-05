@@ -1,6 +1,5 @@
 
-.customers--container {
-    flex-direction: column;}
+/*
 
 .customers {
 
@@ -91,4 +90,104 @@
             flex-direction: column;
             text-align: left;
         }
+}
+*/ 
+
+.customers {
+    background-color: #ffffff;
+    padding: 100px 0 64px 0;
+
+    &__first-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__secondary-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: rgba(134, 135, 139, 1);
+        margin: 95px 0 80px 0;
+    }
+
+    &__reviews {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+    }
+
+    &__reviewsItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        flex: 1 0 auto;
+        max-width: 370px;
+        margin: 0 15px;
+    }
+}
+
+.customers-reviewsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1 0 auto;
+    max-width: 370px;
+    margin: 0 15px;
+
+    &__newFeedback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 38px 20px;
+        background-color: #e2e2e2;
+        border-radius: 10px;
+        font-family: Raleway;
+        font-size: 18px;
+        line-height: 21px;
+        color: #86878b;
+        margin: 0 0 66px 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 70px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 30px solid #e2e2e2;
+        }
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__avatar {
+        margin: 0 15px 0 0;
+    }
+
+    &__data {
+        margin: 0 0 0 15px;
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        display: block;
+    }
+
+    &__job {
+        font-size: 18px;
+        color: #000000;
+    }
 }

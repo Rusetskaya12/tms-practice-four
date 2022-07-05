@@ -1,19 +1,22 @@
-.design--container {
-    display: flex;
-    justify-content: center;
-}
+
 
 .design {
 
-    
-    max-width: 100%;
-    height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/assets/images/city.png) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(/assets/images/city.png);
     background-size: cover;
-    display: flex;
-    align-items: center;
+    padding: 100px 0 50px 0;
 
-
+    &__title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px; 
+        text-align: center;
+        color: white;
+        &::after {
+            background-color: #fff;
+        }
+    }
 
     &__description {
         font-family: 'Raleway';
@@ -21,40 +24,37 @@
         font-weight: 400;
         font-size: 18px;
         color: #FFFFFF;
+        margin: 95px 0 73px 0;
+        text-align: center;
     }
-    &__button-white {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 600;
+
+
+    &__button {
+        
+    text-align: center;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        width: 370px;
         font-size: 18px;
-        margin: 0 auto;
-        margin-top: 25px;
-        width: 400px;
-        text-align: center;
-        border: 2px solid white;
-        color: white;
-        cursor: pointer;
-    
+        line-height: 25px;
+        font-weight: 600;
+        background-color: inherit;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            border: 2px solid #ec7979;
+            color: #ec7979;
+        }
+        &:active {
+            background-color: #ab4949;
+            border: 2px solid #ab4949;
+            color: #ffffff;
+        }
     }
 }
-.design-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &__name {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px; 
-        text-align: center;
-        color: white;
-    }
-   
-    &__background--image {
-        max-width: 100%;
-    }
-}
-
-
-

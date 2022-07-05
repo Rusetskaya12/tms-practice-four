@@ -1,51 +1,58 @@
 
-.socialMedia__container {
+
+.socialMedia {
+    background-color: #f8efef;
+  }
+  
+  .socialMedia-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-}
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 18px 0;
+  }
+  
+  .socialMedia-desc__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+         margin: 0 0 18px 0;
+  }
 
-    .socialMedia {
-       
-        background: #F8EFEF;
-
-        &__content {
-            display: flex;
-        }
-
-        &__network {
-            
-            display: flex;
-            list-style-type: none;
-            align-items: center;
-        }
-
-        &__name {
-            width: 470px;
-        }
-    }
-        .name {
-            &__first-name {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333333;
-            width: 170px;
-        }
-
-        &__secondary-name {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            color: #86878B;
-        }
-        }
-    
-   
-    .icon {
-        padding: 0 15px;
-        &:hover {
-           
-            cursor: pointer;
-        }
-    }
+  .socialMedia-desc__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(134, 135, 139, 1);
+    ;
+  }
+  
+  .socialMedia-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .socialMedia-links__link {
+    font-size: 48px;
+    color: #cccccc;
+    margin: 0 22.5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .socialMedia-links__link:hover {
+    color: #000;
+  }

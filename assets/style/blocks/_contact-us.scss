@@ -1,4 +1,4 @@
-.contact-us--container {
+/*.contact-us--container {
     display: flex;
     flex-direction: column;
 }
@@ -113,7 +113,125 @@
         background: #e55c5c;
     }
 }
+*/ 
 
+.contactUs {
+    background-color: #ffffff;
+    padding: 100px 0 50px 0;
+
+    &__name {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 95px 0 90px 0;
+        color: rgba(134, 135, 139, 1);
+        text-align: center;
+    }
+
+    &__button {
+        text-align: center;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        width: 370px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #ec7979;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+        border: none;
+        &:hover {
+            background-color: #ab4949;
+        }
+        &:active {
+            background-color: #ec7979;
+            box-shadow: inset 0px 0px 5px black;
+        }
+    }
+}
+
+.contactUs-form {
+    display: flex;
+    padding: 0 0 50px 0;
+    margin: 0 -15px;
+    &__data {
+        margin: 0 15px;
+    }
+    &__name {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        display: block;
+        width: 571px;
+        height: 35px;
+        border-bottom: solid 1px #bdbdbd;
+        margin: 0 0 50px 0;
+        border-left:none;
+        border-top: none;
+        border-right:none
+    }
+    &__email {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        display: block;
+        width: 571px;
+        height: 35px;
+        border-bottom: solid 1px #bdbdbd;
+        margin: 0 0 50px 0;
+        border-left:none;
+        border-top: none;
+        border-right:none
+    }
+    &__subject {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        display: block;
+        width: 571px;
+        height: 35px;
+        border-bottom: solid 1px #bdbdbd;
+        border-left:none;
+        border-top: none;
+        border-right:none
+    }
+    &__message {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        display: block;
+        margin: 0 15px;
+        width: 571px;
+        height: 205px;
+        border-bottom: solid 1px #bdbdbd;
+        resize: none;
+        border-left:none;
+        border-top: none;
+        border-right:none
+    }
+}
 
 
 

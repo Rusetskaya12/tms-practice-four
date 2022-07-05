@@ -1,68 +1,45 @@
-.header__container {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
-      
+ 
 .header
 {
     position: absolute;
     width: 100%;
-    background: #000;
+    background-color: #000;
+    z-index: 10;}
 
-    &__allInformation {
-        display: flex
+.header-body {
+        display: flex;
+        justify-content: space-between;
     }
-    
-    
 
-&__logo {
-    padding-top: 25px;
-    padding-bottom: 15px;
-}
-
-&__navigation {
-    font-family: $fontRaleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    color: #FFFFFF;
-    display: flex;
-    text-transform: capitalize;
-}
-
-&__navigation-menu {
-    padding:0 40px;
-    cursor: pointer;
-    list-style-type: none;
-}
-
-&__burger-btn {
-    border: none;
-    outline: none;
-    background: transparent;
-    display: none;
-    width: 24px;
-    height: 18px;
-
-    @include mediaMobile {
+.header-logo {
+    &__logo-link {
         display: block;
+        margin: 22.155px 0;
+    }
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+   
 
+    &__list {
+        display: flex;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 113px;
+        height: 75px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #ec7979;
+        }
         &:active {
-            .header__burger-icon path{  
-                fill: rgb(215, 211, 211);
-            }
+            background-color: #ab4949;
         }
     }
 }
-    &__burger-icon {
-        path {
-            fill: white;
-            }
-        }
-    }
-
-    
-
-
