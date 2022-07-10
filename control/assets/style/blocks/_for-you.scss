@@ -1,0 +1,157 @@
+.for-you {
+    background:linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%);
+    ;
+
+    @include mediaMobile {
+        width: 1200px;
+    }
+
+    &__body {
+        padding: 95px 0;
+    }
+
+    &__table {
+        display: flex;
+        padding: 0 45px;
+    }
+
+    &__button {
+        height: 55px;
+        background: #FFEDC2;
+        border-radius: 8px;
+        width: 200px;
+        font-weight: bold;
+        border: none;
+        margin: 0 auto;
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+     p {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: 	#f2e570;
+        }
+
+}
+}
+.information {
+
+    &__first-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        font-weight: bold;
+        color: #222222;
+    }
+
+    &__second-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #222222;
+        padding: 0 270px 120px;
+    }
+}
+
+.table {
+    &__audiense {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+
+    &__manage {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+
+    &__yourWay {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+}
+.audiense {
+    &__first-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__second-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 65px;
+    }
+}
+
+.manage {
+    &__first-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__second-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 65px;
+    }
+}
+
+.yourWay {
+    &__first-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__second-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 65px;
+    }
+}

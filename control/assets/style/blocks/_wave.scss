@@ -1,0 +1,14 @@
+.wave {
+    background: url(/assets/images/123.png);
+    height: 18%;
+    background-repeat: repeat no-repeat;
+    background-size: 100%;
+
+    @include mediaMobile {
+        background: url(/assets/images/123.png);
+        height: 18%;
+        background-repeat: repeat no-repeat;
+        width: 1200px;
+    }
+
+}

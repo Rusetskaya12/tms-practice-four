@@ -1,0 +1,13 @@
+.pink-wave {
+    background: url(/assets/images/pink-wave.png);
+    height: 6%;
+    background-repeat: repeat no-repeat;
+    background-size: 100%;
+
+    @include mediaMobile {
+        background: url(/assets/images/pink-wave.png);
+        height: 6%;
+        background-repeat: repeat no-repeat;
+        width: 1200px;
+    }
+}

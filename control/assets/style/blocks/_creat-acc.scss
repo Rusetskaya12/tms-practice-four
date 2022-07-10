@@ -1,0 +1,63 @@
+.creat-acc {
+
+    background: url(/assets/images/background.png);
+    background-size:100%;
+    margin: 0 auto;
+    margin-top: 250px;
+    background-repeat: repeat no-repeat;
+
+    &__content-icon {
+        display: flex;
+        margin: 0 auto;
+        
+        &:hover {
+            transform: rotateZ(20deg);
+        }
+    }
+
+    &__content-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__wave {
+        position: relative;
+        left: 650px;
+        bottom: 70px;
+    }
+
+    &__content-button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 220px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: #FFD338;
+        border-radius: 10px;
+        border: none;
+        transition: background-color .3s ease-in-out;
+        
+
+        &:hover {
+            cursor: pointer;
+            background-color: 	#f2e570;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
+

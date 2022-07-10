@@ -1,8 +1,8 @@
 .header {
         
         width: 100%;
-        background: #FFFF
-    ;
+        background: #FFFF;
+       
 
     &__container {
         height: 150px;
@@ -18,12 +18,24 @@
         font-size: 16px;
         display: flex;
         text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+
+        }
     }
 
     &__navigation-menu {
         padding: 0 25px;
         cursor: pointer;
+        transition: 1s;
+        text-align: center;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
+
+    
 
     &__button {
         font-family: 'Roboto';
@@ -42,14 +54,80 @@
         border: none;
         transition: background-color .3s ease-in-out;
 
+        a {
+            text-decoration: none;
+        }
+        
+
 
         &:hover {
             cursor: pointer;
             background-color: 	#f2e570;
+            
+        }
+    }
+
+    &__singIn {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        display: flex;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+                }
+    }
+
+    &__button-class {
+        display: flex;
+    }
+
+    &__singIn {
+        padding: 0 45px;
+        transition: 1s;
+        text-align: center;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__burger-btn {
+        border: none;
+        outline: none;
+        background: transparent;
+        display: none;
+        width: 24px;
+        height: 18px;
+
+        @include mediaMobile {
+            display: block;
+            position: relative;
+            left: 750px;
+            width: 55%;
+
+            &:active {
+                .header__burger-icon path{  
+                    fill: rgb(215, 211, 211);
+                }
+            }
+        }
+    }
+
+    &__burger-icon {
+        path {
+            fill: rgb(118, 8, 8);
         }
     }
 }
 
+.header__navigation {
 
-
+        @include mediaMobile {
+            display: none;
+        }
+    
+    }
 
