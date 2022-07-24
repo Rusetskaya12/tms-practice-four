@@ -1,161 +1,120 @@
 "use strict";
 
-//task2 - вывести бОльшее число
+//Task 1 💻
 
-let height = 15
-let width = 20
+//Создайте переменные, затем сложите их и выведите результат в консоль разработчика.
 
-console.log (Math.max(height,width));
+//```javascript
+//    let x = 20
+//    let y = 58
+//    let z = 42
+//
 
+let oneNumber = 20;
+let tooNumber = 58;
+let threeNumber = 42;
+let totalNumber = oneNumber+tooNumber+threeNumber;
+console.log(totalNumber);
 
-//task1
+//Task2
+//Создайте переменные:
 
-let a = 'true'
-let b = false
-let c = 17
-let d = undefined
-let i = null
-
-console.log (typeof a, b, c, d, i);
-
-//task3
-
-for (let i=1; i<=20; i++) {
-    if (i%3==0)
-    console.log (i);
-}
-
-//task4
-
-let keys = true
-let documents = true
-let pen = true
-let apple = false
-let orange = true
-
-let shouldGoToWork = keys && documents && pen && (apple || orange);
-console.log ('can i go to work?', shouldGoToWork);
-
-//task5
-
-//let yourNumber = prompt ('Enter the number:') 
+//    - количество секунд в минуте
+//    - количество минут в часу
+//    - количество часов в сутках
+//    - количество суток в году
     
-//for (let yourNumber=1; yourNumber <=25; yourNumber++) {
+//Посчитайте ваш возраст в секундах и поместите результат в переменную **`myAgeInSeconds`**
 
-//if (!(yourNumber%5)) {
- //   console.log ('Fiz')
-//} else if (!(yourNumber%3)) {
-//    console.log ('Buz')
-//} else (!(yourNumber%5 || yourNumber%3))
-//{
-//        console.log ('FizBuz')
-//    };
-//}
+let secondsInMinute = 60;
+let minutesInAnHour = 60;
+let hoursInDay = 24;
+let daysYear = 365;
+let myAgeInSecond = daysYear*29*secondsInMinute*minutesInAnHour*hoursInDay;
 
-let yourNumber = prompt ('Enter the number:');
-    
-if (!(yourNumber%5)) {
-    alert("Fiz");}
-else if (!(yourNumber%3)) {
-    alert ("Buz");}
- else if (!(yourNumber%5 && yourNumber%3))
- {
-    alert ("FizBuz");
-};
-//else {
-    
-//    alert ("noNumber");
-//}
-
-//task6
-let age = prompt ('How old are you?');
-if (age >= 18) {
-    console.log ('Попей пивка')
-}
-else if (age<= 15) {
-    console.log ('Пей колу')
-}
-else if (age>=16 && age <=17) {
-    console.log ('Можешь выкурить сигаретку, только маме не говори')
-}
+console.log(myAgeInSecond);
 
 
-//task7 #1
-let sideOfTheWorld = prompt ('В какую сторону света ты хочешь улететь?');
+//Task 3 💻
 
-if (sideOfTheWorld==='юг') {
-    console.log ('на юг пойдешь счастье найдешь')
-}
-else if (sideOfTheWorld==='север') {
-    console.log ('на север пойдешь много денег найдешь')
-}
-else if (sideOfTheWorld==='запад') {
-    console.log ('на запад пойдешь верного друга найдешь')
-}
-else if (sideOfTheWorld==='восток') {
-    console.log ('на восток пойдешь разработчиком станешь')
-}
-else {
-    console.log ('попробуйте еще разок')
-};
+//```javascript
+//   let count = 42
+//    let userName = '42'
 
-//task7 #2
+// Создайте две переменные. Поместите в них переменную **`count`** и превратите в строку, а **`userName`** наоборот в число. Попробуйте реализовать задачу двумя разными способами.
 
-let sideOfTheWorld1 = prompt ('В какую сторону света ты хочешь улететь?');
-switch (sideOfTheWorld1) {
-    case 'север':
-        alert ('на север пойдешь много денег найдешь');
-        break;
-    case 'запад':
-        alert ('на запад пойдешь верного друга найдешь');
-        break;
-    case 'юг':
-        alert ('на юг пойдешь счастье найдешь');
-        break;
-    case 'восток':
-        alert ('на восток пойдешь разработчиком станешь');
-        break;
-    default:
-        alert ('попробуйте еще раз')
-}
+let count = 42;
+let userName='42';
 
-///adv task1
+//1 способ
+let countFirst = ('' + count);
+let userNameFirst = (+ '42');
 
-//let name = prompt ('как тебя зовут?');
-//const name = "пОлИнА нАбЕрЕжНаЯ"
-//console.log(name.toLowerCase);
-//const result = name.charAt(0).toUpperCase()+name.slice(1)
-//console.lggog(result);
-
-//let yourName="пОлИнА нАбЕрЕжНаЯ";
-//alert(yourNamje.toUpperCase());
-//let newName = yourName[0].toUpperCase()+yourName.slice(1);
-//let newName1 = newName[7].toUpperCase()+newName.slice(8);
-//alert(newName1);
-
-let yourName=prompt ('Enter your name');
-alert(`Hi,${yourName}`.toLowerCase());
+//2 способ
+let counSec = String(42);
+let userNameSec = Number(42);
 
 
-//adv task2
-let num1 = prompt('введи число');
-let num2 = prompt('сколько отнять');
-let num3 = prompt ('сколько прибавить');
-let num4 = prompt('сколько умножить');
-let num5 = prompt ('на сколько разделить');
-//alert(Number(num1)-Number(num2)+Number(num3)*Number(num4)/Number(num5));
-alert(`${num1}-${num2}+${num3}*${num4}/${num5} = ${num1-num2+num3*num4/num5}`);
+//#### Task 4 💻
+//Имеется три переменные:
+
+//```javascript
+//  let a = 1
+//  let b = 2
+//  let c = "белых медведей"
+
+//Сложите переменные так, чтобы в результате получилось выражение: **`12 белых медведей`** и результат выведите в консоль.
 
 
-//adv task3
-
-let task = '#';
-while (task.length<=7) {
-    console.log(task+ "\n");
-    task+="#";
-}
+let firstNumber = '1';
+let secondNumber = '2';
+let animal = "белых медведей";
+alert(firstNumber +secondNumber+ ' '+animal);
+console.log(firstNumber+secondNumber+ ' ' +animal);
 
 
 
 
+let access = 'доступ';
+let job = 'морпех';
+let water = 'наледь';
+let accusation = 'попрек';
+let tool = 'рубило';
+let lengthWords = access.length + job.length + water.length + accusation.length + tool.length;
+alert(lengthWords.length);
 
+
+//let name="Kate";
+//let age= 20;
+//let howAreYou=prompt('How are you?');
+//alert(`Variable:${name} have type:'string'`);
+
+
+
+
+let name = prompt('Как тебя зовут?');
+alert(`Тебя зовут ${name}`);
+console.log (name);
+let age = prompt('Сколько тебе лет?');
+alert(`Тебе ${age} лет`);
+console.log(age);
+
+
+
+//Поменяйте значение переменных местами не создавая дополнительной переменной:
+
+let first='4';
+let second='3';
+
+[first,second] = [second,first];
+console.log(first,second);
+
+//В данном послании скрыт шифр! Чтобы его разгадать нам нужно соединить все вторые символы слов!
+
+let codeWord1 = "обернись";
+let codeWord2 = "неужели";
+let codeWord3 = "огурцы";
+let codeWord4 = "липкие";
+//let codeWord5 = (browserType[codeWord1.length-1]);
+//codeWord1[codeWord1.length-1];
+//console.log(codeWord1.(1));
